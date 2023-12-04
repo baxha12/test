@@ -1,0 +1,56 @@
+/* Container styles */
+.car-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid #ccc; /* Border color, you can change it */
+    border-radius: 10px; /* Rounded corners for the container */
+    margin: 20px;
+}
+
+/* Car image styles */
+.car-image {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+/* Car details styles */
+.car-details {
+    max-width: 45%;
+    padding-left: 20px;
+    text-align: left;
+}
+
+/* Car title styles */
+.car-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Car description styles */
+.car-description {
+    font-size: 16px;
+}
+
+/* Media Query for Responsive Desi\gn */
+@media (max-width: 368px) {
+    .car-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items on smaller screens */
+    }
+
+    .car-image {
+        max-width: 100%; /* Make the image occupy 100% width on smaller screens */
+    }
+
+    .car-details {
+        max-width: 100%; /* Make the details occupy 100% width on smaller screens */
+        padding-left: 0; /* Remove left padding on smaller screens */
+        text-align: center;
+        display: flex;
+        flex-direction: column; /* Center the text on smaller screens */
+    }
+}

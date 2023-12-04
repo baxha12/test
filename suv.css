@@ -1,0 +1,110 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfcfc; /* Dark background color, you can change it */
+    color: #080707; /* White text color, you can change it */
+}
+
+header {
+    background-color: #333; /* Dark gray color, you can change it */
+    color: #ffffff; /* White text color, you can change it */
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #444; /* Slightly lighter gray, you can change it */
+    color: #ffffff; /* White text color, you can change it */
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+}
+
+h2, h3 {
+    color: #fff; /* White text color, you can change it */
+}
+h1{
+    text-align: center;
+    color: #fff; /* White text color, you can change it */
+}
+
+.car {
+    margin-bottom: 30px;
+    background-color: #333; /* Dark gray color for cars, you can change it */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Subtle white box-shadow */
+    transition: transform 0.3s ease-in-out;
+}
+
+.car:hover {
+    transform: translateY(-5px);
+}
+
+.car img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners for the images */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.car:hover img {
+    transform: scale(1.1);
+}
+
+.car-collection {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+p {
+    line-height: 1.6;
+    color: #ccc; 
+}
+
+footer {
+    background-color: #333; 
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+.h1{
+    color: #080707;
+    font-family: 'Courier New', Courier, monospace;
+}
+button {
+background-color: #f44336; 
+color: #fff; 
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease-in-out;
+}
+
+
+button:hover {
+background-color: #c62828; 
+}
+.car:hover {
+box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+
+@media (max-width: 768px) {
+    .car-collection {
+        grid-template-columns: 1fr; 
+    }
+
+    .car {
+        width: 100%; 
+        flex-direction: column;
+    }
+}

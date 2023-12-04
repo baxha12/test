@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('photos/download.jpeg'); /
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: #ffffff; 
+        }
+
+        .contact-form {
+            width: 50%;
+            margin: 100px auto;
+            background: rgba(0, 0, 0, 0.7); 
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ffffff; /* Border color, you can change it */
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.8); /* Input background color with transparency, you can change it */
+            color: #000000; 
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #3498db; /* Button background color, you can change it */
+            color: #ffffff; /* Button text color, you can change it */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="number">Phone Number:</label>
+        <input type="tel" id="number" name="number" required>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state">
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country">
+
+        <button type="submit">Submit</button>
+    </div>
+
+</body>
+</html>
